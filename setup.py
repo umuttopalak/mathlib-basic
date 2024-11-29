@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='mathlib',
+    name='mathlib_basic',
     version='0.1',
     packages=find_packages(),
     description='A Python library for basic mathematical operations',
