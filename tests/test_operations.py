@@ -1,5 +1,6 @@
 import unittest
 
+from mathlib_basic.errors import DivideError
 from mathlib_basic.operations import add, divide, multiply, subtract
 
 
@@ -20,7 +21,7 @@ class TestMathFunctions(unittest.TestCase):
     def test_divide(self):
         self.assertEqual(divide(6, 3), 2)
         self.assertEqual(divide(10, 2), 5)
-        with self.assertRaises(ZeroDivisionError):
+        with self.assertRaises(DivideError):
             divide(10, 0)
 
 
