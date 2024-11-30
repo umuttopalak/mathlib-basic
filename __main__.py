@@ -1,4 +1,4 @@
-# mathlib/__main__.py
+from mathlib_basic.errors import DivideError
 from mathlib_basic.operations import add, divide, multiply, subtract
 
 
@@ -8,7 +8,7 @@ def main():
     print("Multiplication: 2 * 3 =", multiply(2, 3))
     try:
         print("Division: 6 / 0 =", divide(6, 0))
-    except ZeroDivisionError as e:
+    except DivideError as e:
         print(e)
 
 if __name__ == "__main__":
